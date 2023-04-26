@@ -76,14 +76,18 @@ const bonus = {
  second: [4, 5, 6],
  third: [7, 8, 9]
 };
+
 // 5a. Create a const variable named "all" and use the "bonus" object as well as spread to set the value of the "all" variable to an array with numbers 1 through 9 as the items (Example: [1, 2, 3, 4, 5, 6, 7, 8, 9])
+const all = [...bonus.first, ...bonus.second, ...bonus.third];
+
+
+// 5b. Create a variable for each of the nine numbers in the "bonus" object and set the number as the value for that using the spelled out name of each number as the variable name (Example: const one = 1, const two = 2, etc.). Also, must use destructuring to complete this.
 const [
     one, two, three,
     four, five, six,
     seven, eight, nine,
-  ] = [...bonus.first, ...bonus.second, ...bonus.third];
+  ] = all;
 
-// 5b. Create a variable for each of the nine numbers in the "bonus" object and set the number as the value for that using the spelled out name of each number as the variable name (Example: const one = 1, const two = 2, etc.). Also, must use destructuring to complete this.
 console.log(one, two);
 
 // When finished, create a repository in the “SpreadDestructuringExercise” Folder as well as on GitHub. Add and commit everything in the SpreadDestructuringExercise folder and push it up to your GitHub repository. Then paste the link to your GitHub repository page in the form in google classroom.
